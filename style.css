@@ -2147,6 +2147,10 @@ a {
   display: block;
 }
 
+.body.about-me {
+  background-color: #000;
+}
+
 .body.aboutme {
   overflow: hidden;
 }
@@ -2167,9 +2171,9 @@ a {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-family: Geist, sans-serif;
+  font-family: "Basementgrotesque V 1", sans-serif;
   font-size: 200px;
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   position: relative;
   bottom: -161px;
@@ -2486,8 +2490,14 @@ a {
   text-align: center;
   background-color: #383838;
   border-radius: 15px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  display: inline-flex;
 }
 
 .collection-item {
@@ -2498,12 +2508,26 @@ a {
 
 .heading-3 {
   color: #fff;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-top: 0;
   font-family: Geist, sans-serif;
+  display: inline-flex;
+  position: static;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .heading-4 {
   color: #fff;
   background-color: #000;
+  height: 80px;
+  font-family: Sk Modernist, sans-serif;
+  font-size: 80px;
 }
 
 .text-block-3 {
@@ -2739,6 +2763,7 @@ a {
 
 .text-block-5 {
   color: var(--white);
+  margin-bottom: 11px;
   font-family: Geistmono, sans-serif;
 }
 
@@ -2800,11 +2825,18 @@ a {
 }
 
 .button-4 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   padding-left: 0;
   padding-right: 0;
   text-decoration: none;
-  display: block;
+  display: inline-flex;
+  position: relative;
+  left: 0;
 }
 
 .button-5 {
@@ -2842,6 +2874,7 @@ a {
   margin-left: 0;
   font-family: "Fa Brands 400", sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 50px;
   text-decoration: none;
   display: flex;
@@ -2891,7 +2924,7 @@ a {
   grid-auto-columns: 50px;
   grid-auto-flow: column;
   margin-top: 33px;
-  display: grid;
+  display: inline-flex;
   position: static;
 }
 
@@ -2974,7 +3007,7 @@ a {
 
 .links {
   margin-bottom: 12px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .collection-list-2 {
@@ -2983,7 +3016,10 @@ a {
   grid-template-rows: auto;
   grid-template-columns: 300px 300px repeat(auto-fit, 300px);
   grid-auto-columns: 1fr;
-  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
@@ -3298,13 +3334,22 @@ a {
   .aboutme {
     background-color: #000;
   }
+
+  .collection-list-2 {
+    flex-flow: column;
+  }
+}
+
+#w-node-fde3d4a5-2493-d3bf-5066-68bdf3fa99a8-f71d3faa {
+  align-self: auto;
+  justify-self: auto;
 }
 
 #w-node-_561ae0ad-993c-b2c7-fbcb-8251336f6998-f71d3faa, #w-node-c963d521-e21e-185f-680b-bfe9e88328e7-f71d3faa {
   align-self: start;
 }
 
-#w-node-_5f8b774c-176d-d85f-dc7d-e1cc4c67c9e5-f71d3faa {
+#w-node-_5f8b774c-176d-d85f-dc7d-e1cc4c67c9e5-f71d3faa, #w-node-dcda9f57-ac50-1745-ed1a-589be2931ce1-f71d3faa {
   align-self: center;
   justify-self: start;
 }
@@ -3677,5 +3722,12 @@ a {
   src: url('https://uploads-ssl.webflow.com/6677facd2e45ac06f71d3fa3/667d8ab5078ff6ddcc97f445_DegularText-SemiboldItalic.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sk Modernist';
+  src: url('https://uploads-ssl.webflow.com/6677facd2e45ac06f71d3fa3/66827100f3037d975f0393a3_Sk-Modernist-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
